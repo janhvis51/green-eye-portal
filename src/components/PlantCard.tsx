@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 interface Plant {
   id: number;
   name: string;
-  health: 'Excellent' | 'Good' | 'Fair' | 'Poor' | 'Critical';
+  health: string;
   image: string;
   lastWatered: string;
   nextWatering: string;
@@ -17,23 +17,23 @@ interface PlantCardProps {
 
 const PlantCard: React.FC<PlantCardProps> = ({ plant }) => {
   const getHealthColor = (health: string) => {
-    switch (health) {
-      case 'Excellent': return 'text-green-500 bg-green-100';
-      case 'Good': return 'text-green-400 bg-green-50';
-      case 'Fair': return 'text-yellow-500 bg-yellow-100';
-      case 'Poor': return 'text-orange-500 bg-orange-100';
-      case 'Critical': return 'text-red-500 bg-red-100';
+    switch (health.toLowerCase()) {
+      case 'excellent': return 'text-green-500 bg-green-100';
+      case 'good': return 'text-green-400 bg-green-50';
+      case 'fair': return 'text-yellow-500 bg-yellow-100';
+      case 'poor': return 'text-orange-500 bg-orange-100';
+      case 'critical': return 'text-red-500 bg-red-100';
       default: return 'text-gray-500 bg-gray-100';
     }
   };
 
   const getHealthIcon = (health: string) => {
-    switch (health) {
-      case 'Excellent': return '🌟';
-      case 'Good': return '🌱';
-      case 'Fair': return '🌿';
-      case 'Poor': return '🍂';
-      case 'Critical': return '🥀';
+    switch (health.toLowerCase()) {
+      case 'excellent': return '🌟';
+      case 'good': return '🌱';
+      case 'fair': return '🌿';
+      case 'poor': return '🍂';
+      case 'critical': return '🥀';
       default: return '🌿';
     }
   };

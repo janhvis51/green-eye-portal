@@ -8,7 +8,7 @@ import plantsData from '@/data/plants.json';
 interface Plant {
   id: number;
   name: string;
-  health: 'Excellent' | 'Good' | 'Fair' | 'Poor' | 'Critical';
+  health: string;
   image: string;
   lastWatered: string;
   nextWatering: string;
@@ -19,7 +19,7 @@ const Index = () => {
   const [plants, setPlants] = useState<Plant[]>([]);
 
   useEffect(() => {
-    setPlants(plantsData);
+    setPlants(plantsData as Plant[]);
   }, []);
 
   const renderHomeSection = () => (
@@ -93,28 +93,30 @@ const Index = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-400 via-green-500 to-blue-600 flex items-center justify-center p-4 relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-black/20" />
-      <div 
-        className="absolute inset-0 opacity-30"
-        style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600&h=900&fit=crop")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      />
-      
-      {/* Content */}
-      <div className="relative z-10 w-full flex items-center justify-center min-h-screen py-8">
-        {activeSection === 'home' && renderHomeSection()}
-        {activeSection === 'plants' && renderPlantsSection()}
-        {activeSection === 'scanner' && renderScannerSection()}
+    <>
+      <div className="min-h-screen bg-gradient-to-br from-green-400 via-green-500 to-blue-600 flex items-center justify-center p-4 relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 bg-black/20" />
+        <div 
+          className="absolute inset-0 opacity-30"
+          style={{
+            backgroundImage: 'url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600&h=900&fit=crop")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        />
+        
+        {/* Content */}
+        <div className="relative z-10 w-full flex items-center justify-center min-h-screen py-8">
+          {activeSection === 'home' && renderHomeSection()}
+          {activeSection === 'plants' && renderPlantsSection()}
+          {activeSection === 'scanner' && renderScannerSection()}
+        </div>
       </div>
 
       {/* Custom Styles */}
-      <style jsx>{`
+      <style>{`
         @keyframes fade-in {
           from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
@@ -133,7 +135,7 @@ const Index = () => {
           animation: slide-in 0.6s ease-out;
         }
       `}</style>
-    </div>
+    </>
   );
 };
 

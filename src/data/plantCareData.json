@@ -1,0 +1,73 @@
+
+{
+  "anthurium": {
+    "care": "Water once a week. Keep in bright, indirect light. Avoid overwatering.",
+    "className": "Anthurium",
+    "height": "30-40cm",
+    "width": "25-30cm",
+    "category": "unhealthy"
+  },
+  "clivia": {
+    "care": "Water when the soil feels dry. Provide bright, indirect sunlight.",
+    "className": "Clivia",
+    "height": "40-60cm",
+    "width": "30-40cm",
+    "category": "healthy"
+  },
+  "dieffenbachia": {
+    "care": "Water moderately. Place in medium to low light. Avoid cold drafts.",
+    "className": "Dieffenbachia",
+    "height": "30-120cm",
+    "width": "20-60cm",
+    "category": "healthy"
+  },
+  "dracaena": {
+    "care": "Water every 2 weeks. Needs low to medium light. Keep away from direct sunlight.",
+    "className": "Dracaena",
+    "height": "50-200cm",
+    "width": "30-80cm",
+    "category": "healthy"
+  },
+  "gloxinia": {
+    "care": "Water regularly but avoid soggy soil. Prefers bright, indirect light.",
+    "className": "Gloxinia",
+    "height": "15-25cm",
+    "width": "20-30cm",
+    "category": "healthy"
+  },
+  "kalanchoe": {
+    "care": "Allow soil to dry between waterings. Needs bright, indirect sunlight.",
+    "className": "Kalanchoe",
+    "height": "15-30cm",
+    "width": "15-25cm",
+    "category": "healthy"
+  },
+  "orchid": {
+    "care": "Water weekly. Ensure bright, indirect sunlight and good air circulation.",
+    "className": "Orchid",
+    "height": "30-90cm",
+    "width": "20-40cm",
+    "category": "healthy"
+  },
+  "sansevieria": {
+    "care": "Water sparingly. Thrives in low to bright indirect light.",
+    "className": "Sansevieria",
+    "height": "30-120cm",
+    "width": "5-15cm",
+    "category": "healthy"
+  },
+  "violet": {
+    "care": "Water from the base to prevent leaf spots. Provide indirect sunlight.",
+    "className": "Violet",
+    "height": "10-15cm",
+    "width": "15-20cm",
+    "category": "healthy"
+  },
+  "zamioculcas": {
+    "care": "Water when soil is completely dry. Tolerates low light but prefers bright light.",
+    "className": "Zamioculcas",
+    "height": "40-60cm",
+    "width": "40-60cm",
+    "category": "healthy"
+  }
+}
