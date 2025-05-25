@@ -20,7 +20,7 @@
     "id": 3,
     "name": "Fiddle Leaf Fig",
     "health": "Fair",
-    "image": "https://images.unsplash.com/photo-1580911157376-99e6e17f3db6?w=400&h=300&fit=crop",
+    "image": "https://images.unsplash.com/photo-1596074123850-1b3a71f6b9b8?w=400&h=300&fit=crop",
     "lastWatered": "3 days ago",
     "nextWatering": "Today"
   },
@@ -28,7 +28,7 @@
     "id": 4,
     "name": "Peace Lily",
     "health": "Good",
-    "image": "https://images.unsplash.com/photo-1518335935020-cfd9c64b0be9?w=400&h=300&fit=crop",
+    "image": "https://images.unsplash.com/photo-1545450660-4bbc1537957c?w=400&h=300&fit=crop",
     "lastWatered": "1 day ago",
     "nextWatering": "In 2 days"
   },
@@ -44,7 +44,7 @@
     "id": 6,
     "name": "Spider Plant",
     "health": "Poor",
-    "image": "https://images.unsplash.com/photo-1588816230026-5c2b06bb8db7?w=400&h=300&fit=crop",
+    "image": "https://images.unsplash.com/photo-1572688484438-313a6e50c333?w=400&h=300&fit=crop",
     "lastWatered": "1 week ago",
     "nextWatering": "Today"
   }
